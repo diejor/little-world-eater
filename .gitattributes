@@ -1,0 +1,104 @@
+* text=auto eol=lf
+
+*.bat       text eol=crlf
+*.cmd       text eol=crlf
+*.ps1       text eol=crlf
+*.sln       text eol=crlf
+*.csproj    text eol=crlf
+
+*.sh        text eol=lf
+*.bash      text eol=lf
+
+*.gd            text eol=lf
+*.cs            text eol=lf diff=csharp
+*.tscn          text eol=lf
+*.tres          text eol=lf
+*.godot         text eol=lf
+*.cfg           text eol=lf
+*.import        text eol=lf
+*.gdshader      text eol=lf
+*.gdshaderinc   text eol=lf
+*.gdextension   text eol=lf
+*.json          text eol=lf
+*.md            text eol=lf
+*.yml           text eol=lf
+*.yaml          text eol=lf
+*.svg           text eol=lf
+
+*.res   binary
+*.scn   binary
+*.pck   binary
+*.ctex  binary
+*.stex  binary
+
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.bmp  binary
+*.tga  binary
+*.tif  binary
+*.tiff binary
+*.webp binary
+*.ico  binary
+*.psd      binary
+*.xcf      binary
+*.kra      binary
+*.ase      binary
+*.aseprite binary
+*.exr  binary
+*.hdr  binary
+*.dds  binary
+*.ktx  binary
+*.ktx2 binary
+
+*.wav  binary
+*.ogg  binary
+*.mp3  binary
+*.flac binary
+*.aac  binary
+*.m4a  binary
+*.opus binary
+*.mp4  binary
+*.mov  binary
+*.avi  binary
+*.webm binary
+*.mkv  binary
+
+*.glb    binary
+*.gltf   binary
+*.fbx    binary
+*.blend  binary
+*.blend1 binary
+*.obj    binary
+*.dae    binary
+*.3ds    binary
+*.ply    binary
+*.stl    binary
+*.ttf   binary
+*.otf   binary
+*.woff  binary
+*.woff2 binary
+
+*.zip binary
+*.7z  binary
+*.gz  binary
+*.bz2 binary
+*.xz  binary
+*.rar binary
+*.dll   binary
+*.so    binary
+*.dylib binary
+*.exe   binary
+*.pdb   binary
+*.lib   binary
+*.a     binary
+*.wasm  binary
+*.apk   binary
+*.aab   binary
+*.jar   binary
+
+*.tscn  -merge
+*.tres  -merge
+
+/addons/**  linguist-vendored
