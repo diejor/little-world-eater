@@ -52,6 +52,7 @@ extra_cull_margin = 16000.0
 mesh = SubResource("QuadMesh_dither")
 
 [node name="SoftBody3D" type="SoftBody3D" parent="." unique_id=1391503846]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4279296, 1.1920929e-07, -3.5241451)
 mesh = SubResource("SphereMesh_o5qli")
 simulation_precision = 30
 
