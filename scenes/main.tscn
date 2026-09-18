@@ -28,44 +28,6 @@ shader_parameter/color_levels = 4.0
 material = SubResource("ShaderMaterial_dither")
 size = Vector2(2, 2)
 
-[sub_resource type="Animation" id="Animation_sgp6g"]
-resource_name = "GLIDE"
-length = 10.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 4.9666667, 10),
-"transitions": PackedFloat32Array(1, 0.84089655, 1),
-"update": 0,
-"values": [Vector3(1.8547239, 1.179728, 1.8353326), Vector3(3.9627101, 1.239049, 0.016551137), Vector3(1.8547239, 1.179728, 1.8353326)]
-}
-
-[sub_resource type="Animation" id="Animation_o5qli"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(1.8547239, 1.179728, 1.8353326)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_0wfyh"]
-_data = {
-&"GLIDE": SubResource("Animation_sgp6g"),
-&"RESET": SubResource("Animation_o5qli")
-}
-
 [sub_resource type="SphereMesh" id="SphereMesh_sgp6g"]
 
 [node name="Main" type="Node3D" unique_id=1154245291]
@@ -84,10 +46,5 @@ transform = Transform3D(0.7055845, -0.19223587, 0.6820527, 0, 0.9625005, 0.27127
 extra_cull_margin = 16000.0
 mesh = SubResource("QuadMesh_dither")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=34647121]
-root_node = NodePath("../Camera3D")
-libraries/ = SubResource("AnimationLibrary_0wfyh")
-autoplay = &"GLIDE"
-
-[node name="CSGMesh3D" type="CSGMesh3D" parent="." unique_id=199501885]
+[node name="Ball" type="CSGMesh3D" parent="." unique_id=199501885]
 mesh = SubResource("SphereMesh_sgp6g")
